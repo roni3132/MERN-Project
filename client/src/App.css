@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+#root{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+}
+.krmlogo{
+    width: 100px;
+    height: 100px;
+}
+.ml-auto{
+    margin-left: auto!important;
+}
+/* commen blcok for box */
+.commenbbox{
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 5px 2px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.signuplogo{
+    overflow: hidden !important;
+}
+
+#regdiv{
+    height: 480px;   
+    overflow: hidden;
+}
+#regdiv h4{
+    font-family:'Fredoka One';
+}
+.regdiv input {
+    border: none;margin-left: 8px;
+    width: 25em;
+  }
+  .logindiv input{
+    border: none;margin-left: 8px;
+  }
+
+#regdiv .form-group{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+#regdiv  input:focus {
+    outline: none;
+}
+
+.eyeicon:hover{
+    cursor: pointer;
+}
+/* css for home page */
+.center{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #f5f7fa 0%, #b8c6db 74%);   
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;
+}
+
+/* login */
+
+.loginimg{
+    color: blue;
+}
+/* css 404 page */
+#error{
+    background-color: white;
+
+}
+/* About Us */
+.aboutimg{
+    overflow: hidden;
+    height: 100px;
+    width: 180px;
+    overflow: hidden !important;
+}
+.profileimg {    
+    position: relative;
+    width: 50%;
+    overflow: hidden !important;
+  } 
+
+.profileimg .changeimgbtn{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 14px;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    width: 8.5rem;
+   
+  }
+
+.profileimg.changeimgbtn:hover {
+    background-color: black
+  }
+
+
+.about h6{
+    font-family:'Fredoka One';
+}
+.about a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}
+.userprofesion{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+.about .nav-item.active{
+    border-bottom: 5px solid blue !important;
+}
+.about{
+height: 80vh;
+}
+/* contect US */
+.developerdetailsdiv{
+    background-color: white;
+    /* height: 100vh; */
+
+}
+.developerdetailsdiv .detailbox {
+    /* border: 2px solid red; */
+    padding-top: 10px !important;
+    border-radius: 2px;
+    margin-top: 40px;
+    background-color: white;
+    box-shadow:  rgba(60, 64, 67, 0.3) 0px 1px 1px 1px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.contect_icon{
+   color: #0e0edb;
+}
+
+
+/* Mobile Css  */
+@media only screen and (max-width: 765px)  and (min-width:350px){
+    
+  /* About Page */
+  .about{
+    height: 70% !important;
+    width: 70% !important;
+  }
+  .fulldetails{
+    align-items: center;
+  }
+  .fulldetails p{
+    padding: 3px;
+  }
+
+  /* Contect US */
+  .contect_blocks{
+    margin: 0px 20px !important;
+  }
+  .detailbox .contect_icon{
+    display: flex !important    ;
+    justify-content: center !important;
+  }
+  .contect_title,.contect_detail{
+    text-align: center !important;
+  }
+
+  #getfeedbackdiv{
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100vw;
+  }
+  
+  /*Contect Us */
+  .logindiv{
+    height: 100% !important;
+  }
+  .logindiv .signuplogo{
+    display: none;
+  }
+ 
+  .logindiv input{
+    width: 7rem;
+    margin-left: 9px !important;
+  }
+
+  /* Registration Div */
+  /* #regdiv{
+
+  } */
+
+  
+   .regdiv{
+    height: 100% !important;
+    overflow: scroll !important;    
+  }    
+
+  .regdiv input{
+    width: 19rem !important;
+  }
+}
+
+/* iPad Css  */
+/* @media only screen and (max-width: 1200px) {
+   */
+@media only screen and (min-device-width: 770px) and (max-device-width: 1024px) and (orientation : portrait) {
+  /* Login Div */
+  .signuplogo{
+    display: block;
+    margin-top: 42px;
+    height: 341px !important;
+  }     
+  .logindiv input{
+      width: 10rem;
+      margin-left: 10px !important;
+  }
+
+
+  /* Registration Div */
+  .regdiv{
+    /* background-color: #0e0edb; */
+    overflow: scroll !important;    
+    overflow-y: hidden;
+  }
+
+  .regdiv input{
+    margin-left: 6px;
+    width: 18rem !important;
+  }
+
+
+
+
+}
